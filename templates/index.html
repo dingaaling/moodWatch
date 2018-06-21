@@ -30,11 +30,11 @@
 
     <div class="container">
 
-      {% for comment in comments %}
-          <div class="row">
-              {{ comment }}
-          </div>
-      {% endfor %}
+      <div class="row">
+              <h1>Social Media Posts</h1>
+      </div>
+
+      <br>
 
       <div class="row">
         <form action="." method="POST">
@@ -42,8 +42,56 @@
             <input type="submit" class="btn btn-success" value="Post">
         </form>
       </div>
+
     <br><br>
-    <p>Mood Scores: {{mood}} </p>
+
+    <div class="row">
+            <b>Posts:</b>
+    </div>
+
+    {% for comment in comments %}
+        <div class="row">
+            {{ comment }}
+        </div>
+    {% endfor %}
+
+    <br>
+
+    <div class="row">
+            <b>Mood Scores:</b>
+    </div>
+
+      {% for mood in moods %}
+          <div class="row">
+              {{ mood }}
+          </div>
+      {% endfor %}
+
+    <br>
+
+    <hr>
+
+    <div class="row">
+            <h1>Mood Watch Monitoring</h1>
+    </div>
+
+    <br>
+
+    <div class="row">
+            <b>Name: Jane &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baseline Mood: {{baselineMood}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Today's Mood: {{sessionMood}}</b>
+    </div>
+
+    <br>
+
+    <div class="row">
+            <b>Mood Ring</b>
+    </div>
+
+    <br>
+
+    <svg height="100" width="100">
+      <circle cx="50" cy="50" r="55" stroke="white" stroke-width="3" fill="{{color}}" />
+    </svg>
 
     </div><!-- /.container -->
 
