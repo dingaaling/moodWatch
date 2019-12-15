@@ -6,3 +6,11 @@ Python3 Flask App with HTML front-end.
 Powered by VADER sentiment analysis and Twilio.
 
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+
+## Dashboard Screenshot
+![](https://github.com/dingaaling/moodWatch/blob/master/MoodWatch_Screenshot.png)
+
+## Story Board
+![](https://github.com/dingaaling/moodWatch/blob/master/storyboard.PNG)
+
+
